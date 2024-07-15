@@ -1,8 +1,16 @@
-# React + Vite
+PROYECTO MORENI HNOS - Gestion de actividades productivas
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este es un proyecto con desarrollo a largo plazo, por requerimiento y falta de tiempo se desarrollo unicamente las pantallas de login, registro, lista de productos, agregar productos, y eliminar productos (ésta ultima tiene un error que no se pudo solucionar).
 
-Currently, two official plugins are available:
+Dichas pantallas estan desarrolladas con tecnología React Js y estilizadas con CSS3.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Posee un servidor backend desarrollado con tecnología Node JS, en donde se encuentran todas las logicas rutas, controladores, servicios y repositorios, tanto para usuarios como para productos.
+
+Posee también una conexión con base de datos, utilizando SQL. La misma se encuentra en la nube CleverCloud, el cual ofrece un panel de administrador con phpMyAdmin envevido.
+
+Tanto el frontend como el backend esta dentro del repositorio personal, y subido a entorno de producción a traves del hosting www.vercel.com.
+
+Este proyecto esta pensado para que el usuario que lo opere sea administrador, ya que podra ejecutar todas las funcionalidades provistas.
+
+
+
