@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { login } from '../../fetching/auth.fetching'
 import { Link, useNavigate } from 'react-router-dom'
+import "./Login.css"
 
 
 const LoginScreen = () => {
@@ -24,13 +25,23 @@ const LoginScreen = () => {
         }
     }
   return (
-    <div>
-        <form onSubmit={handleSubmit}>
-            <div>
+    <div className='contenedor'>
+
+        <div className='intro'>
+            <img  className='logo' src='./img/logo.png'/>
+            <h2>MORENI HNOS SRL - Gestión de actividades productivas</h2>
+        </div>
+
+        <form onSubmit={handleSubmit} className='formulario'>
+
+            <h2>Iniciar Sesión</h2>
+
+            <div className='input-contenedor'>
                 <label htmlFor="email">Ingrese su email:</label>
                 <input placeholder='joeDoe@gmail.com' id='email' name='email'/>
             </div>
-            <div>
+
+            <div className='input-contenedor'>
                 <label htmlFor="password">Ingrese su contraseña:</label>
                 <input type="text" placeholder='******' id='password' name='password' />
             </div>
@@ -40,7 +51,7 @@ const LoginScreen = () => {
                 <span style={{color: 'red'}}>{errorText}</span>
             }
             <span>Si aun no estas registrado, <Link to={'/register'}>registrate</Link></span>
-            <button type='submit'>Iniciar sesion</button>
+            <button type='submit' className='boton'>Iniciar sesion</button>
         </form>
     </div>
   )

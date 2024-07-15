@@ -31,7 +31,6 @@ export const registrar = async (usuario) => {
         }
     }
     catch(error){
-        /* console.error('Error en logueo', error) */
         throw {message: error.message}
     }
 }
@@ -43,7 +42,7 @@ export const verificarToken = async () =>{
         const token  = localStorage.getItem('token')
         const headers = new Headers()
         headers.append('Authorization', token)
-        const result = await HTTP.GET(URL.URL_API + ROUTE + '/verify-token', headers)
+        const result = await HTTP.GET(URL.URL_API + ROUTE + '/verify-token', defaultHeaders)
         return result
     }
     catch(error){

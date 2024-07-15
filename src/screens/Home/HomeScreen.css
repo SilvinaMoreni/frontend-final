@@ -1,0 +1,43 @@
+.tabla{
+    margin: 2%;
+    text-align: center;
+}
+
+.titulo{
+    margin: 2%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.boton-agregar{
+    background-color:orangered;
+    color: white;
+    margin: 2%;
+    padding: 10px;
+    cursor:pointer;
+    border-radius: 12px;   
+}
+
+.encabezado{
+    background-color: rgb(19, 19, 94);
+    color: white;
+}
+
+.encabezado th{
+    padding: 10px;
+}
+
+
+.boton-edit{
+    background-color: green;
+    color: white;
+    padding: 5px;
+    cursor: pointer;
+    margin-right: 5px;
+}
+
+.boton-elim{
+    background-color: red;
+    color: white;
+    padding: 5px;
+    cursor:pointer;
+}

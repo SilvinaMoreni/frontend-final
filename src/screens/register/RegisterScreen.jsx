@@ -1,6 +1,10 @@
 import React, { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { registrar } from '../../fetching/auth.fetching'
+import "../../admin/crearProductos.css"
+
+
+
 
 const RegisterScreen = () => {
   const [errorText, setErrorText] = useState('')
@@ -13,7 +17,7 @@ const RegisterScreen = () => {
                 password: event.target.password.value
             }
             console.log(usuario)
-            await registrar(usuario)
+            await registrar(usuario);
             setErrorText('')
             navigate('/login')
         }
@@ -22,14 +26,14 @@ const RegisterScreen = () => {
         }
     }
   return (
-    <div>
-        <form onSubmit={handleSubmit}>
+    <div  className='formulario-pr'>
+        <form onSubmit={handleSubmit} className="form-add">
           <h1>Registro</h1>
-            <div>
+            <div className='caja'>
                 <label htmlFor="email">Ingrese su email:</label>
                 <input placeholder='joeDoe@gmail.com' id='email' name='email'/>
             </div>
-            <div>
+            <div className='caja'>
                 <label htmlFor="password">Ingrese su contraseña:</label>
                 <input type="text" placeholder='******' id='password' name='password' />
             </div>
@@ -38,7 +42,7 @@ const RegisterScreen = () => {
                 &&
                 <span style={{color: 'red'}}>{errorText}</span>
             }
-            <button type='submit'>Registrar</button>
+            <button type='submit' className='boton'>Registrar</button>
         </form>
     </div>
   )
