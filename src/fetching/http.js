@@ -1,6 +1,6 @@
 
 export const URL = {
-    URL_API: "https://backend-sql-rho.vercel.app/",
+    URL_API: "https://backend-sql-rho.vercel.app",
 }
 
 
